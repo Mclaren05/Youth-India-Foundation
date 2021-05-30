@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Youth India Foundation</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="/static/css/join/style.css">
+
+    <title>Youth India Foundation</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+    <link rel="manifest" href="/static/site.webmanifest">
+</head>
+
+<body>
+    <div class="container">
+        <i class="fas fa-arrow-left left-arrow"></i><a href="/"><button class="back-button"
+        style="cursor: pointer;">Back To Home</button></a>
+        <header>Join Us</header>
+        <div class="progress-bar">
+            <div class="step">
+                <p>Register</p>
+                <div class="bullet">
+                    <span>1</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Details</p>
+                <div class="bullet">
+                    <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>About</p>
+                <div class="bullet">
+                    <span>3</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Submit</p>
+                <div class="bullet">
+                    <span>4</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+        </div>
+        <div class="form-outer">
+            <form action="/join/" enctype='multipart/form-data' method="POST">
+                <input type="hidden" name="csrfmiddlewaretoken" value="tclCZJRh9th9XhPdBTYaK8Cz6tg9zgEDBu3ZMUGFEuvxpv83QY3BaXy7t7sO5Fjs">
+                <div class="page slide-page">
+                    <div class="title">Basic Info:</div>
+                    <div class="field">
+                        <div class="label">Name</div>
+                        <input type="text" name="name" maxlength="100" required id="id_name">
+                    </div>
+                    <div class="field">
+                        <div class="label">Email</div>
+
+                        <input type="email" name="email" maxlength="254" required id="id_email">
+                    </div>
+                    <div class="field">
+                        <div class="label">Mobile</div>
+                        <input type="text" name="mobile" maxlength="12" required id="id_mobile">
+                    </div>
+
+                    <div class="field">
+                        <div class="label">Gender</div>
+                        <select name="gender" id="id_gender">
+  <option value="" selected>---------</option>
+
+  <option value="Male">Male</option>
+
+  <option value="Female">Female</option>
+
+  <option value="Others">Others</option>
+
+</select>
+                    </div>
+                    <div class="field">
+                        <div class="label">Date of Joining</div>
+                        <input type="text" name="loa" value="2021-05-30" required id="id_loa"><input type="hidden" name="initial-loa" value="2021-05-30 21:29:30+00:00" id="initial-id_loa">
+                    </div>
+                    <div class="field">
+                        <button class="firstNext next">Next</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">More Details:</div>
+                    <div class="field">
+                        <div class="label">Choose Your Preferred Division</div>
+                        <select name="division" id="id_division">
+  <option value="" selected>---------</option>
+
+  <option value="6">National</option>
+
+  <option value="7">State</option>
+
+  <option value="8">Society</option>
+
+  <option value="10">Initiative</option>
+
+  <option value="11">Outreach</option>
+
+</select>
+                    </div>
+                    <div class="field">
+                        <div class="label">Choose Your Preferred <span id="sd-span">Subdivision</span></div>
+                        <select name="subDivision" id="subDivision" required>
+              <!-- <option value="school">School</option> -->
+            </select>
+                    </div>
+
+                    <div class="field">
+                        <div class="label">City</div>
+                        <!--<input type="text">-->
+                        <input type="text" name="city" maxlength="20" required id="id_city">
+                    </div>
+                    <div class="field">
+                        <div class="label">Select Your Education</div>
+                        <select name="education" required id="id_education">
+  <option value="" selected>---------</option>
+
+  <option value="School">School</option>
+
+  <option value="College">College</option>
+
+  <option value="Graduate">Graduate</option>
+
+  <option value="PostGraduate">Post Graduate</option>
+
+</select>
+                        <!--<select id="edu">-->
+                        <!--  <option value="school">School</option>-->
+                        <!--  <option value="college">College</option>-->
+                        <!--  <option value="graduate">Graduate</option>-->
+                        <!--  <option value="post-graduate">Post-Graduate</option>-->
+                        <!--</select>-->
+                    </div>
+                    <div class="field">
+                        <div class="label">Institute Name</div>
+                        <!--<input type="text">--><input type="text" name="instituteName" maxlength="100" required id="id_instituteName">
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-1 prev">Previous</button>
+                        <button class="next-1 next">Next</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Area of Interest:</div>
+                    <div class="field">
+                        <div class="label">Department</div>
+                        <select name="department" id="id_department">
+  <option value="" selected>---------</option>
+
+  <option value="1">IT</option>
+
+  <option value="3">Marketing</option>
+
+  <option value="4">HR</option>
+
+  <option value="5">Management</option>
+
+  <option value="6">Finance</option>
+
+  <option value="7">PR</option>
+
+</select>
+                    </div>
+                    <div class="field position position-">
+                        <div class="label">Available Positions for <span id="department-span"></span></div>
+                        <select name="position" id="position">
+              <!-- Position -->
+            </select>
+                    </div>
+                    <div class="field">
+                        <div class="label">Why do you want to join Youth India</div>
+                        <!--<input type="text">--><input type="text" name="whyJoin" maxlength="255" required id="id_whyJoin">
+                    </div>
+                    <div class="field">
+                        <div class="label">Why do you think we should hire you?</div>
+                        <!--<input type="text">--><input type="text" name="whyHire" maxlength="255" required id="id_whyHire">
+                    </div>
+                    <div class="field">
+                        <div class="label">Select a Time Slot for interview</div>
+                        <select name="timeslot" required id="id_timeslot">
+  <option value="" selected>---------</option>
+
+  <option value="11am to 1pm">11am to 1pm</option>
+
+  <option value="2pm to 4pm">2pm to 4pm</option>
+
+  <option value="5pm to 7pm">5pm to 7pm</option>
+
+</select>
+                        <!--<select>-->
+                        <!--  <option>11am to 1pm</option>-->
+                        <!--  <option>2pm to 4pm</option>-->
+                        <!--  <option>5pm to 7pm</option>-->
+                        <!--</select>-->
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-2 prev">Previous</button>
+                        <button class="next-2 next">Next</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Login Details:</div>
+                    <div class="field">
+                        <label>Upload your resume</label>
+                        <input type="file" name="resume" id="id_resume">
+                        <!--<form action="/action_page.php">-->
+                        <!--  <input type="file" name="resume" style="color:transparent; width:130px; height:28px; " id="id_resume" />-->
+                        <!--</form>-->
+                    </div>
+                    <div class="field">
+                        <input type="checkbox" name="terms" id="terms" "
+              style="width:130px; height:28px; " required />
+            <label style="color: red; "> I Agree To Terms &
+              Coditions</label>
+          </div>
+          <div class="field btns ">
+            <button class="prev-3 prev ">Previous</button>
+            <button class="submit " type="submit " name="submit " id="submit ">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/js/script.js "></script>
+  <script src="/static/js/script2.js "></script>
+
+</body>
+
+</html>
